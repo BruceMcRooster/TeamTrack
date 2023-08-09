@@ -17,6 +17,7 @@ composeIcons = "1.1.0"
 kotlinx-serialization = "1.5.1"
 kotlinx-datetime = "0.4.0"
 multiplatformSettings = "1.0.0"
+realm = "1.10.0"
 
 [libraries]
 
@@ -34,6 +35,8 @@ composeIcons-featherIcons = { module = "br.com.devsrsouza.compose.icons:feather"
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
 multiplatformSettings = { module = "com.russhwolf:multiplatform-settings", version.ref = "multiplatformSettings" }
+realm-base = { module = "io.realm.kotlin:library-base", version.ref = "realm" }
+realm-sync = { module = "io.realm.kotlin:library-sync", version.ref = "realm" }
 
 [plugins]
 
@@ -44,3 +47,4 @@ android-application = { id = "com.android.application", version.ref = "agp" }
 libres = { id = "io.github.skeptick.libres", version.ref = "libres" }
 buildConfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildConfig" }
 kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+realm = { id = "io.realm.kotlin", version.ref = "realm" }

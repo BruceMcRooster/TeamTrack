@@ -6,4 +6,5 @@ plugins {
     alias(libs.plugins.libres).apply(false)
     alias(libs.plugins.buildConfig).apply(false)
     alias(libs.plugins.kotlinx.serialization).apply(false)
+    alias(libs.plugins.realm).apply(false)
 }
