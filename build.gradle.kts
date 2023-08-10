@@ -6,5 +6,11 @@ plugins {
     alias(libs.plugins.libres).apply(false)
     alias(libs.plugins.buildConfig).apply(false)
     alias(libs.plugins.kotlinx.serialization).apply(false)
-    alias(libs.plugins.realm).apply(false)
+//    alias(libs.plugins.realm).apply(false)
+}
+// TODO Change to commented alias when Realm support for backlinks is stable
+buildscript {
+    dependencies {
+        classpath(libs.realm.gradle)
+    }
 }

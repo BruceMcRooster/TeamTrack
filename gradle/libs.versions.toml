@@ -17,7 +17,7 @@ composeIcons = "1.1.0"
 kotlinx-serialization = "1.5.1"
 kotlinx-datetime = "0.4.0"
 multiplatformSettings = "1.0.0"
-realm = "1.10.0"
+realm = "1.10.3-SNAPSHOT"
 
 [libraries]
 
@@ -37,6 +37,8 @@ kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.
 multiplatformSettings = { module = "com.russhwolf:multiplatform-settings", version.ref = "multiplatformSettings" }
 realm-base = { module = "io.realm.kotlin:library-base", version.ref = "realm" }
 realm-sync = { module = "io.realm.kotlin:library-sync", version.ref = "realm" }
+# TODO Remove when Realm support for backlinks is stable
+realm-gradle = { module = "io.realm.kotlin:gradle-plugin", version.ref = "realm" }
 
 [plugins]
 
